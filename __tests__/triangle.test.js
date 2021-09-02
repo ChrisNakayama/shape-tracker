@@ -1,6 +1,13 @@
 import Triangle from './../src/triangle.js';
 
-test('should correctly determine whether three lengths make an isosceles triangle', () => {
-  const isocTriangle = new Triangle(5,5,7)
-  expect(isocTriangle.checkType()).toEqual("isosceles triangle");
+describe('Triangle', () => {
+  let reusableTriangle;
+
+  beforeEach(() => {
+    reusableTriangle = new Triangle(5, 5, 5);
+  });
+
+  test('should show how beforeEach() works', () => {
+    console.log(reusableTriangle);
+  });
 });
